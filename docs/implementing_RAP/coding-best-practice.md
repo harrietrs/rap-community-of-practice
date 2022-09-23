@@ -14,7 +14,7 @@ This page is still under construction, however you can find guidance on this at 
 
 [1]: tidy-data.md
 [2]: notebooks_versus_ide_development.md
-[3]: ../python/basic-python-data-analysis-operations.md
-[4]: ../python/python-functions.md
-[5]: ../pyspark/pyspark-style-guide.md
-[6]: ../R/README.md
+[3]: ../training_resources/python/basic-python-data-analysis-operations.md
+[4]: ../training_resources/python/python-functions.md
+[5]: ../training_resources/pyspark/pyspark-style-guide.md
+[6]: ../training_resources/R/README.md

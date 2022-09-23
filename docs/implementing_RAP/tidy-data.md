@@ -1,5 +1,7 @@
 # Tidy Data
 
+Adopting inconsistent data formats leads to a huge amount of wasted effort and can actually lead to very complex code. By adopting **tidy data format** for your work you can both improve your service to users and simplify your own production pipeline.
+
 ## Reference for this guide
 
 [Hadley Wickham's original paper on tidy format (pdf)](https://vita.had.co.nz/papers/tidy-data.pdf)
@@ -179,24 +181,24 @@ In this instance, it is recommended that the tidy dataset is split into two, one
 
 **Table 1**
 
-|ID | Artist | Song Title | Duration|
-| --- | --- | --- | ---|
-|1 | The Beatles | We Can Work It Out | 3:00|
-|2 | The Beatles | Paperback Writer | 3:30|
-|3 | The Beach Boys | Good Vibrations | 3:00|
-|4 | The Lovin' Spoonful | Summer in the City | 3:20|
-|5 | Four Tops | Reach Out I'll Be There | 3:10|
+| ID  | Artist              | Song Title              | Duration |
+| --- | ------------------- | ----------------------- | -------- |
+| 1   | The Beatles         | We Can Work It Out      | 3:00     |
+| 2   | The Beatles         | Paperback Writer        | 3:30     |
+| 3   | The Beach Boys      | Good Vibrations         | 3:00     |
+| 4   | The Lovin' Spoonful | Summer in the City      | 3:20     |
+| 5   | Four Tops           | Reach Out I'll Be There | 3:10     |
 
 **Table 2**
 
-|ID | Date Entered | Rank|
-| --- | --- | ---|
-|3 | 1966-12-10 | 7|
-|3 | 1966-12-17 | 4|
-|3 | 1966-12-24 | 2|
-|4 | 1966-08-13 | 3|
-|4 | 1966-08-20 | 2|
-|4 | 1966-08-27 | 1|
+| ID  | Date Entered | Rank |
+| --- | ------------ | ---- |
+| 3   | 1966-12-10   | 7    |
+| 3   | 1966-12-17   | 4    |
+| 3   | 1966-12-24   | 2    |
+| 4   | 1966-08-13   | 3    |
+| 4   | 1966-08-20   | 2    |
+| 4   | 1966-08-27   | 1    |
 
 This approach is useful for tidy data buts lacks in data processing tools' capabilities, so in that case these tables will have to be merged again.
 

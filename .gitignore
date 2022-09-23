@@ -163,3 +163,7 @@ cython_debug/
 
 # MkDocs documentation
 site*/
+
+# VSCode
+
+.vscode/

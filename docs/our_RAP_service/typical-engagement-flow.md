@@ -60,9 +60,9 @@ Nevertheless, the text below lays out the type of activities that occur in acros
 - Take some time to reflect on the process internally as a team and consider how you plan to take forward the work.
 
 [1]: ./support-models.md
-[2]: ../what_is_RAP/levels_of_RAP.md
+[2]: ../introduction_to_RAP/levels_of_RAP.md
 [3]: ./thin-slice-strategy.md
-[4]: ../implementing_RAP/pyspark/pyspark-style-guide.md
-[5]: ../implementing_RAP/git/using-git-collaboratively.md
-[6]: ../implementing_RAP/python/python-functions.md
-[7]: ../implementing_RAP/python/unit-testing.md
+[4]: ../training_resources/pyspark/pyspark-style-guide.md
+[5]: ../training_resources/git/using-git-collaboratively.md
+[6]: ../training_resources/python/python-functions.md
+[7]: ../training_resources/python/unit-testing.md

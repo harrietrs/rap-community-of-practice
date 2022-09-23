@@ -19,4 +19,4 @@ One of the artefacts missing from the CoP is some kind of document that makes ex
 
 [1]: ./support-models.md
 [2]: ./support-models.md#1-rap-team-leads-development
-[3]: /what_is_RAP/levels_of_RAP.md
+[3]: ../introduction_to_RAP/levels_of_RAP.md

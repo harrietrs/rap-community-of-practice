@@ -10,52 +10,51 @@ plugins:
 nav:
   - Home: README.md
   - About: about.md
-  - What is RAP:
-      - About RAP: what_is_RAP/README.md
-      - Benefits and Aims of RAP: what_is_RAP/benefits_and_aims_of_RAP.md
-      - Levels of RAP: what_is_RAP/levels_of_RAP.md
-  - Our RAP Service:
-      - About Our RAP Service: our_RAP_service/README.md
-      - Lessons Learned: our_RAP_service/lessons-learned.md
-      - Programme Level Reporting: our_RAP_service/programme-level-reporting.md
-      - Service Design and User Research: our_RAP_service/service-design-and-user-research.md
-      - Support Models: our_RAP_service/support-models.md
-      - The RAP Team: our_RAP_service/the-RAP-team.md
-      - Thin Slice Strategy: our_RAP_service/thin-slice-strategy.md
-      - Typical Engagement Flow: our_RAP_service/typical-engagement-flow.md
+  - Introduction to RAP:
+      - Why is RAP important: introduction_to_RAP/why_is_RAP_important.md
+      - Levels of RAP: introduction_to_RAP/levels_of_RAP.md
+  - Our RAP service:
+      - About our RAP service: our_RAP_service/README.md
+      - Building team capability: our_RAP_service/building_team_capability.md
+      - Programme level reporting: our_RAP_service/programme-level-reporting.md
+      - Service design and user research: our_RAP_service/service-design-and-user-research.md
+      - Support models: our_RAP_service/support-models.md
+      - The RAP team: our_RAP_service/the-RAP-team.md
+      - Thin slice strategy: our_RAP_service/thin-slice-strategy.md
+      - Typical engagement flow: our_RAP_service/typical-engagement-flow.md
   - Implementing RAP:
-      - About Implementing RAP: implementing_RAP/README.md
-      - General guidance:
-          - Code Review: implementing_RAP/general_guidance/code-review.md
-          - Coding Best Practice: implementing_RAP/general_guidance/coding-best-practice.md
-          - How to Publish your Code in the Open: implementing_RAP/general_guidance/how-to-publish-your-code-in-the-open.md
-          - Notebooks vs IDE Development: implementing_RAP/general_guidance/notebooks_versus_ide_development.md
-          - Quality Assuring Analytical Outputs: implementing_RAP/general_guidance/quality-assuring-analytical-ouputs.md
-          - Tidy Data: implementing_RAP/general_guidance/tidy-data.md
-          - Training your Team: implementing_RAP/general_guidance/training-your-team.md
+      - Code review: implementing_RAP/code-review.md
+      - Coding best practice: implementing_RAP/coding-best-practice.md
+      - How to publish your code in the open: implementing_RAP/how-to-publish-your-code-in-the-open.md
+      - Notebooks vs IDE development: implementing_RAP/notebooks_versus_ide_development.md
+      - Quality assuring analytical outputs: implementing_RAP/quality-assuring-analytical-ouputs.md
+      - Tidy data: implementing_RAP/tidy-data.md
+      - Training your team: implementing_RAP/training-your-team.md
+  - Training resources:
       - Git:
-          - Intro to Git: implementing_RAP/git/intro-to-git.md
-          - Using Git Collaboratively: implementing_RAP/git/using-git-collaboratively.md
+          - Intro to Git: training_resources/git/intro-to-git.md
+          - Using Git collaboratively: training_resources/git/using-git-collaboratively.md
       - Python:
-          - Back Testing: implementing_RAP/python/backtesting.md
-          - Basic Python Data Analysis Operations: implementing_RAP/python/basic-python-data-analysis-operations.md
-          - Handling File Paths: implementing_RAP/python/handling-file-paths.md
-          - Logging and Error Handling in Python: implementing_RAP/python/logging-and-error-handling.md
-          - Project Structure and Packaging: implementing_RAP/python/project-structure-and-packaging.md
-          - Python Functions: implementing_RAP/python/python-functions.md
-          - Unit Testing: implementing_RAP/python/unit-testing.md
-          - Unit Testing Field Definitons: implementing_RAP/python/unit-testing-field-definitions.md
-          - Virtual Environments: implementing_RAP/python/virtual-environments.md
-          - Visualisation in Python: implementing_RAP/python/visualisation-in-python.md
+          - Back testing: training_resources/python/backtesting.md
+          - Basic Python data analysis operations: training_resources/python/basic-python-data-analysis-operations.md
+          - Handling file paths: training_resources/python/handling-file-paths.md
+          - Logging and error handling in Python: training_resources/python/logging-and-error-handling.md
+          - Project structure and packaging: training_resources/python/project-structure-and-packaging.md
+          - Python functions: training_resources/python/python-functions.md
+          - Unit testing: training_resources/python/unit-testing.md
+          - Unit testing field definitons: training_resources/python/unit-testing-field-definitions.md
+          - Virtual environments: training_resources/python/virtual-environments.md
+          - Visualisation in Python: training_resources/python/visualisation-in-python.md
       - PySpark:
-          - About PySpark: implementing_RAP/pyspark/README.md
-          - Logging and Error Handling in PySpark: implementing_RAP/pyspark/logging-and-error-handling.md
-          - PySpark Style Guide: implementing_RAP/pyspark/pyspark-style-guide.md
-          - PySpark Tutorial: implementing_RAP/pyspark/pyspark-tutorial.py
+          - About PySpark: training_resources/pyspark/README.md
+          - Logging and error handling in PySpark: training_resources/pyspark/logging-and-error-handling.md
+          - PySpark style guide: training_resources/pyspark/pyspark-style-guide.md
+          - PySpark tutorial: training_resources/pyspark/pyspark-tutorial.py
       - R:
-          - External Resources: implementing_RAP/R/README.md
-          - Git with RStudio: implementing_RAP/R/git_with_RStudio.md
-  - Code of Conduct: CODE_OF_CONDUCT.md
+          - External resources: training_resources/R/README.md
+          - Git with RStudio: training_resources/R/git_with_RStudio.md
+  - Useful links: useful_links.md
+  - Code of conduct: CODE_OF_CONDUCT.md
   - Contribute: CONTRIBUTE.md
   - Licence: LICENCE
 theme:
@@ -73,6 +72,8 @@ extra_css:
   - stylesheets/extra.css
 markdown_extensions:
   - tables
+  - pymdownx.tasklist:
+      clickable_checkbox: true
 extra:
   social:
     - icon: fontawesome/brands/github

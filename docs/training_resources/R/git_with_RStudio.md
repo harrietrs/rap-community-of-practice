@@ -275,7 +275,7 @@ If you are happy to merge the two branches, then select the type of Pull Request
 
 3. Type `git status` in the terminal to ensure that `ii` happened successfully and you are on the default main branch. You should see this message:
 
-    ![](../../images/image3.jpg)
+   ![](../../images/image3.jpg)
 
 4. Type `git pull` to update your local main branch with the latest version of the remote/online GitHub main branch. This might take a few seconds.
 
