@@ -1,5 +1,7 @@
 # How to Publish your Code in the Open
 
+In NHS Digital we have committed to publishing more and more of our code over time to **improve the transparency** of our analytical work.
+
 ## Why publish your code?
 
 The Government's [Digital Service Standard](https://www.gov.uk/service-manual/service-standard) 12th principle states that all publicly funded code should be open, reusable and available under appropriate licences. The main benefits of publishing your code are:
@@ -18,16 +20,16 @@ Releasing code externally is part of the RAP project, the targets below are agre
 
 % of publications on RAP
 
-| Month | Published code |
-| --- | --- |
-| Jan-22 | 0% |
-| Apr-22 | 5% |
-| Jul-22 | 10% |
-| Oct-22 | 20% |
-| Jan-23 | 40% |
-| Apr-23 | 60% |
-| Jul-23 | 80% |
-| Oct-23 | 100% |
+| Month  | Published code |
+| ------ | -------------- |
+| Jan-22 | 0%             |
+| Apr-22 | 5%             |
+| Jul-22 | 10%            |
+| Oct-22 | 20%            |
+| Jan-23 | 40%            |
+| Apr-23 | 60%            |
+| Jul-23 | 80%            |
+| Oct-23 | 100%           |
 
 ## How to prepare your code and repository
 
@@ -35,7 +37,7 @@ We have designed a process that will guide teams from the start of a project thr
 
 Projects and publications with the aim to be published should follow the **Fit-for-publishing workflow**:
 
-![](../../images/prepare_code.drawio.png)
+![](../images/prepare_code.drawio.png)
 
 ### Workflow initial steps
 
@@ -56,8 +58,8 @@ This checklist covers the review process in place to ensure that the code is:
 
 To access the checklist click on the link below and select the Download option:
 
-- PDF version for viewing: [Fit for publishing checkilst PDF](../../images/Fit_for_publishing_checklist.pdf)
-- Download the Work doc version to edit: [Fit for publishing checklist Word](../../images/Fit_for_publishing_checklist.docx)
+- PDF version for viewing: [Fit for publishing checkilst PDF](../images/Fit_for_publishing_checklist.pdf)
+- Download the Work doc version to edit: [Fit for publishing checklist Word](../images/Fit_for_publishing_checklist.docx)
 
 For each subsection of the checklist:
 

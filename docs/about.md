@@ -1,5 +1,10 @@
 # RAP Community of Practice
 
+|                                                                        |                                                                                  |                                                          |                                                            |                                                                                             |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [<img alt="What is RAP?" img src="images/What is RAP icon.png">][1]    | [<img alt="Publishing Code" img src="images/publishing code icon.png">][2]       | [<img alt="Python" img src="images/Python icon.png">][3] | [<img alt="R" img src="images/R icon.png">][4]             | [<img alt="Coding Best Practice" img src="images/coding best practice icon.png">][5]        |
+| [<img alt="Example Repos" img src="images/Example Repos icon.png">][6] | [<img alt="Training your team" img src="images/training your team icon.png">][7] | [<img alt="Git" img src="images/Git icon.png">][8]       | [<img alt="Testing" img src="images/Testing icon.png">][9] | [<img alt="NHSD Analytics Function" img src="images/NHSD Analytics Function repo.png">][10] |
+
 ## Aims
 
 This community of practice aims to support teams in adopting RAP practices through:
@@ -7,11 +12,11 @@ This community of practice aims to support teams in adopting RAP practices throu
 1. **Developing learning materials including reusable templates**
 2. **Offering support as teams establish new working practices**
 
-See more about our [aims][7].
+See more about our [aims][11].
 
 ## Support
 
-If your team is embarking upon a RAP journey, you should look at our [what is RAP][1] page and think about which [levels of RAP][2] that you want to target.
+If your team is embarking upon a RAP journey, you should look at our [why RAP is important][1] page and think about which [levels of RAP][12] that you want to target.
 
 There are several forums where you can introduce yourself, ask for help, or discuss different approaches:
 
@@ -19,7 +24,7 @@ There are several forums where you can introduce yourself, ask for help, or disc
 - [RAP Slack channel](https://nhsrcommunity.slack.com/archives/C03N1GXHEH0) from the [NHS-R](https://nhsrcommunity.com/) community.
 - [RAP collaboration Slack channel](https://govdatascience.slack.com/archives/C6H22U3H9) on the cross-government data science Slack Workspace (open to all civil servants, including NHS staff).
 
-See more about how we can [support][9] you and your team.
+See more about how we can [support][13] you and your team.
 
 ## Tutorials and resources
 
@@ -27,13 +32,14 @@ As we work alongside teams at NHS Digital, we try to produce reusable learning m
 
 We also have created some bespoke guidance that lays out how you would accomplish these practices in the NHS Digital setting, which are available internally.
 
-The Implementing RAP folder has its own README to explain the content on:
+The 'Implementing RAP' folder contains guides on how to start using RAP principles within your own team such as, using [code reviews][14], [publishing your code][2] or how to start [training your team][15].
 
-- [General Guidance][11]
-- [Git resources][10]
-- [Python resources][4]
-- [PySpark resources][12]
-- [R resources][8]
+The 'training resources' folder contains resources on:
+
+- [Git][8]
+- [Python][3]
+- [PySpark][16]
+- [R][4]
 
 These resources are demand-driven so if you think of something worth including, improving, or want to contribute, please [raise an issue on GitHub](https://github.com/NHSDigital/rap-community-of-practice/issues) or contact the team via the [MS Teams page](https://teams.microsoft.com/l/channel/19%3aEnoJ_c3NIwcWaLoqHyrbmiui8SI-8lZ1B2SvxNuGbyU1%40thread.tacv2/General?groupId=1c1528d7-030e-48eb-92cf-dc0f6a618ea0&tenantId=50f6071f-bbfe-401a-8803-673748e629e2) (internal to NHS Digital), or [email](mailto:datascience@nhs.net).
 
@@ -47,15 +53,19 @@ RAP Community of Practice codebase is released under the MIT License.
 
 The documentation is © Crown copyright and available under the terms of the [Open Government 3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) licence.
 
-[1]: ./what_is_RAP/README.md
-[2]: ./what_is_RAP/levels_of_RAP.md
-[3]: ./implementing_RAP/
-[4]: ./implementing_RAP/README.md#python
-[5]: ./our_RAP_service/
-[6]: ./what_is_RAP/
-[7]: ./what_is_RAP/benefits_and_aims_of_RAP.md
-[8]: ./implementing_RAP/README.md#r
-[9]: ./our_RAP_service/README.md#support
-[10]: ./implementing_RAP/README.md#git
-[11]: ./implementing_RAP/README.md#general-guidance
-[12]: ./implementing_RAP/README.md#pyspark
+[1]: ./introduction_to_RAP/why_is_RAP_important.md
+[2]: ./implementing_RAP/how-to-publish-your-code-in-the-open.md
+[3]: ./training_resources/python/basic-python-data-analysis-operations.md
+[4]: ./training_resources/R/README.md
+[5]: ./implementing_RAP/coding-best-practice.md
+[6]: https://github.com/NHSDigital/data-analytics-services#rap-repositories
+[7]: ./implementing_RAP/training-your-team.md
+[8]: ./training_resources/git/intro-to-git.md
+[9]: ./training_resources/python/unit-testing.md
+[10]: https://github.com/NHSDigital/data-analytics-services
+[11]: ./introduction_to_RAP/why_is_RAP_important.md#aims-of-rap
+[12]: ./introduction_to_RAP/levels_of_RAP.md
+[13]: ./our_RAP_service/README.md#support
+[14]: ./implementing_RAP/code-review.md
+[15]: ./implementing_RAP/training-your-team.md
+[16]: ./training_resources/pyspark/README.md

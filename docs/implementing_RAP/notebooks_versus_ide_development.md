@@ -116,7 +116,7 @@ When operating in tandem, two key drawbacks of notebooks are:
 
 Taken together, this allows downstream cells to impact upstream results.
 
-![](../../images/notebook_cells_working_order.PNG#smallimg) ![](../../images/notebook_cells_broken_order.PNG#smallimg)
+![](../images/notebook_cells_working_order.PNG#smallimg) ![](../images/notebook_cells_broken_order.PNG#smallimg)
 
 _It worked the first time (left), but not the second (right)!_
 
@@ -137,7 +137,7 @@ This is more challenging with notebooks, because importing functionality from no
 
 A note on Databricks specifically: it seems simple to import code across notebooks and thus to be able to break down longer notebooks into smaller, more manageable chunks. However, there is a catch: when `%run` is called, the two notebooks - the parent notebook where run is called and the child that is being run - share the same scope; this means that any variables, functions etc available for reading and writing in the cells of one notebook are available for reading and writing in the cells of the other.
 
-![](../../images/databricks_notebook_parent_run.PNG#smallimg) ![](../../images/databricks_notebook_child_run.PNG#smallimg)
+![](../images/databricks_notebook_parent_run.PNG#smallimg) ![](../images/databricks_notebook_child_run.PNG#smallimg)
 
 _The parent (left) errors because the child (right) causes hidden changes within the scope_
 
@@ -159,13 +159,13 @@ Tests are harder to implement in notebooks because testing frameworks, such as u
 
 **Notebooks are inherently difficult to review and audit** through version control software like git: they are stored in a complicated (JSON) format internally, which enables is rendered nicely on screen for the user when viewed through the tool (e.g. Jupyter / Databricks), but it is hard to see differences between versions through tools like git.
 
-![](../../images/git_diff_notebook.PNG#bigimg)
+![](../images/git_diff_notebook.PNG#bigimg)
 
 _Git diff from a (simple!) Jupyter notebook: lots to look at!_
 
 **Text files (usually what is written in IDEs) are simple to version control** because it is easy to compare a line in the file between two given versions, since everything is designed to be read by humans. This makes it easy to understand what has changed between each version of a file and to rollback to previous versions if required.
 
-![](../../images/git_diff_python_file.PNG#bigimg)
+![](../images/git_diff_python_file.PNG#bigimg)
 
 _Git diff from a Python file: much clearer!_
 

@@ -25,7 +25,7 @@ I would strongly encourage organisations who want to adopt RAP practices to read
 
 ## Support
 
-If your team is embarking upon a RAP journey, you should look at our [what is RAP][6] page and think about which [levels of RAP][7] that you want to target.
+If your team is embarking upon a RAP journey, you should look at our [benefits and aims of RAP][6] page and think about which [levels of RAP][7] that you want to target.
 
 From there, we recommend reaching out for some in-person support.
 
@@ -60,6 +60,6 @@ There are several forums where you can introduce yourself, ask for help, or disc
 [3]: ./typical-engagement-flow.md
 [4]: ./thin-slice-strategy.md
 [5]: ./programme-level-reporting.md
-[6]: ../what_is_RAP/README.md
-[7]: ../what_is_RAP/levels_of_RAP.md
+[6]: ../introduction_to_RAP/why_is_RAP_important.md
+[7]: ../introduction_to_RAP/levels_of_RAP.md
 [8]: ./building_team_capability.md

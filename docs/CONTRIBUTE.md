@@ -1,4 +1,4 @@
-## Contributing
+# Contribute
 
 Hi there! We're thrilled that you'd like to contribute to this landing page repository. Your help is essential for keeping it great.
 

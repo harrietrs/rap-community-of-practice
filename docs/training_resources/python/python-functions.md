@@ -1,5 +1,7 @@
 # Python functions
 
+> We are currently updating our minimal Python RAP package template, which is freely available to use via Github: [RAP package template](https://github.com/NHSDigital/rap-package-template).
+
 ## What are Python functions and why do I care?
 
 A function is a block of organised code that is reusable, and is used to perform a single defined action. Functions can take in multiple values (arguments) and can also return a value after executing. The code of the function only runs when it is called.

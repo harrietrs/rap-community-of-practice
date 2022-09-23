@@ -32,10 +32,10 @@ These levels aim to offer teams a recommended maturity map for adopting RAP prac
 - [ ] Does your process run based on event-based triggers (e.g., new data in database) or on a schedule?
 - [ ] Changes to the package clearly signposted. E.g. a changelog in the package, server for package versions, etc.
 
-[1]: ../implementing_RAP/git/intro-to-git.md
-[2]: ../implementing_RAP/git/using-git-collaboratively.md
-[3]: ../implementing_RAP/pyspark/pyspark-style-guide.md
-[4]: ../implementing_RAP/general_guidance/how-to-publish-your-code-in-the-open.md
-[5]: ../implementing_RAP/python/project-structure-and-packaging.md
-[6]: ../implementing_RAP/python/python-functions.md
-[7]: ../implementing_RAP/python/unit-testing.md
+[1]: ../training_resources/git/intro-to-git.md
+[2]: ../training_resources/git/using-git-collaboratively.md
+[3]: ../training_resources/pyspark/pyspark-style-guide.md
+[4]: ../implementing_RAP/how-to-publish-your-code-in-the-open.md
+[5]: ../training_resources/python/project-structure-and-packaging.md
+[6]: ../training_resources/python/python-functions.md
+[7]: ../training_resources/python/unit-testing.md

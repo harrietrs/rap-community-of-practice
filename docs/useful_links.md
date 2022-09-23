@@ -1,26 +1,4 @@
-# What is RAP and why should I care?
-
-Scientific research has increasingly relied on code to conduct complex statisticial analyses in recent years. As code has become ubiquitous, new ways of working have emerged to ensure that scientific findings are rigorous and reproducible.
-
-These practices have been applied to government analytic work under the banner of **Reproducible Analytical Pipelines (RAP)**. RAPs bring together a number of good practices to help ensure all published statistics meet the highest standards of transparency and reproducibility.
-
-Over time, all analytical work in NHSD (and across government) will be expected to adopt the RAP practices. For example, RAP practices are a key element needed in order to meet the standards of quality analysis set out in the [Aqua Book](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government). This adoption will take time and should not be considered as all-or-nothing. There are stages to RAP. Teams can take the journey one step at a time with support from this community.
-
-## Benefits of RAP
-
-The Benefits and Aims of RAP page provides information on our goal to implement RAP within NHS Digital, why RAP is useful and how we want to support teams at NHS Digital (and wider) to implement RAP.
-
-- [The benefits of using RAP and how the community of practice aims to support teams in adopting RAP practices][1]
-
-## Our Levels of RAP
-
-At NHS Digital we have devised three 'levels' of RAP that helps guide teams of different maturity levels.
-
-The levels of RAP offer teams a way to see how to improve on their current practices, incrementally. We encourage teams to start at _baseline RAP_ as an absolute minimum and then progress towards _gold RAP_ which we view as the best practice for teams.
-
-- [How to achieve the different levels of RAP][2]
-
-## Useful links
+# Useful links
 
 This is a list, we have collated, of RAP resources throughout the Government and other areas. Let us know if you have any links to useful information, resources or guides that could be added to the list.
 
@@ -49,6 +27,3 @@ This is a list, we have collated, of RAP resources throughout the Government and
 
 - There are several slack channels that discuss RAP and related topics: the [govdatascience.slack.com RAP channel](https://govdatascience.slack.com/archives/C6H22U3H9), the [NHS-R community](https://nhsrcommunity.slack.com/), and the [NHS-pycom community](https://nhs-pycom.slack.com/)
 - We have an [MS Teams page](https://teams.microsoft.com/l/channel/19%3aEnoJ_c3NIwcWaLoqHyrbmiui8SI-8lZ1B2SvxNuGbyU1%40thread.tacv2/General?groupId=1c1528d7-030e-48eb-92cf-dc0f6a618ea0&tenantId=50f6071f-bbfe-401a-8803-673748e629e2) (internal to NHS Digital)
-
-[1]: ./benefits_and_aims_of_RAP.md
-[2]: ./levels_of_RAP.md
