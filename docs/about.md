@@ -1,7 +1,7 @@
 # RAP Community of Practice
 
-|                                                                        |                                                                                  |                                                          |                                                            |                                                                                             |
-| ---------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+|                                                                           |                                                                                     |                                                             |                                                               |                                                                                                |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | [<img alt="What is RAP?" img src="../images/What is RAP icon.png">][1]    | [<img alt="Publishing Code" img src="../images/publishing code icon.png">][2]       | [<img alt="Python" img src="../images/Python icon.png">][3] | [<img alt="R" img src="../images/R icon.png">][4]             | [<img alt="Coding Best Practice" img src="../images/coding best practice icon.png">][5]        |
 | [<img alt="Example Repos" img src="../images/Example Repos icon.png">][6] | [<img alt="Training your team" img src="../images/training your team icon.png">][7] | [<img alt="Git" img src="../images/Git icon.png">][8]       | [<img alt="Testing" img src="../images/Testing icon.png">][9] | [<img alt="NHSD Analytics Function" img src="../images/NHSD Analytics Function repo.png">][10] |
 
@@ -69,3 +69,21 @@ The documentation is © Crown copyright and available under the terms of the [Op
 [14]: ./implementing_RAP/code-review.md
 [15]: ./implementing_RAP/training-your-team.md
 [16]: ./training_resources/pyspark/README.md
+
+<br></br>
+
+<style>
+table, td, th {
+   border: none!important;
+   background-color: #f0f4f5;
+   font-size: 16px;
+}
+
+th {
+    padding: 0!important;
+}
+
+td {
+    padding: 10px!important;
+}
+</style>

@@ -18,21 +18,3 @@ The [Goldacre Review](https://www.gov.uk/government/publications/better-broader-
 
 [1]: ./introduction_to_RAP/why_is_RAP_important.md
 [2]: ./implementing_RAP/how-to-publish-your-code-in-the-open.md
-
-<br></br>
-
-<style>
-table, td, th {
-   border: none!important;
-   background-color: #f0f4f5;
-   font-size: 16px;
-}
-
-th {
-    padding: 0!important;
-}
-
-td {
-    padding: 10px!important;
-}
-</style>
