@@ -1,6 +1,6 @@
 # RAP Community of Practice
 
-> **This material is maintained by the [NHS Digital Data Science team](mailto:datascience@nhs.net)**. Is it really??
+> **This material is maintained by the [NHS Digital Data Science team](mailto:datascience@nhs.net)**. 
 
 These resources are intended for those interested in adopting [Reproducible Analytical Pipelines (RAP)][2].
 
