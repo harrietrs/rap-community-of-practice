@@ -10,9 +10,9 @@ You can also create the QA log to audit if the QA plan has been followed – tra
 
 ## Quality assurance checklist
 
-Here is a quality assurance checklist which we adapted from [ONS's Quality Assurance of Code for Analysis and Research](https://best-practice-and-impact.github.io/qa-of-code-guidance/checklist_higher.html) and updated to apply in Data Science team for some previous projects. You can select the relevent steps for your project depending on its complexity and the required level of quality assurance.
+Here is a quality assurance checklist which we adapted from [ONS's Quality Assurance of Code for Analysis and Research](https://best-practice-and-impact.github.io/qa-of-code-guidance/checklist_higher.html) and updated to apply in Data Science team for some previous projects. You can select the relevant steps for your project depending on its complexity and the required level of quality assurance.
 
-(you can check the boxes below by adding an 'x' in between the square braces: `- [ ]` becomes `- [x]` in your markdown)
+> (you can check the boxes below by adding an 'x' in between the square braces: `- [ ]` becomes `- [x]` in your markdown)
 
 ### Governance and IG
 
@@ -85,7 +85,7 @@ Here is a quality assurance checklist which we adapted from [ONS's Quality Assur
 - [ ] Code is grouped in themed files (modules) and is packaged for easier use.
 - [ ] Main analysis scripts import and run high level functions from the package.
 - [ ] Low level functions and classes carry out one specific task. As such, there is only one reason to change each function.
-- [ ] Repetition in the code is minimalised. For example, by moving reusable code into functions or classes.
+- [ ] Repetition in the code is minimised. For example, by moving reusable code into functions or classes.
 - [ ] Objects and functions are open for extension but closed for modification; functionality can be extended without modifying the source code.
 - [ ] Subclasses retain the functionality of their parent class while adding new functionality. Parent class objects can be replaced with instances of the subclass and still work as expected.
 

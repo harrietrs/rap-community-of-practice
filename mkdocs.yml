@@ -10,41 +10,42 @@ plugins:
 nav:
   - Home: README.md
   - About: about.md
+  - Support: support.md
   - Introduction to RAP:
-      - Why is RAP important: introduction_to_RAP/why_is_RAP_important.md
+      - Why RAP is important: introduction_to_RAP/why_is_RAP_important.md
       - Levels of RAP: introduction_to_RAP/levels_of_RAP.md
   - Our RAP service:
-      - About our RAP service: our_RAP_service/README.md
+      - The RAP team: our_RAP_service/README.md
       - Building team capability: our_RAP_service/building_team_capability.md
-      - Programme level reporting: our_RAP_service/programme-level-reporting.md
-      - Service design and user research: our_RAP_service/service-design-and-user-research.md
       - Support models: our_RAP_service/support-models.md
-      - The RAP team: our_RAP_service/the-RAP-team.md
       - Thin slice strategy: our_RAP_service/thin-slice-strategy.md
       - Typical engagement flow: our_RAP_service/typical-engagement-flow.md
+      - Programme level reporting: our_RAP_service/programme-level-reporting.md
+      - Service design and user research: our_RAP_service/service-design-and-user-research.md
   - Implementing RAP:
       - Code review: implementing_RAP/code-review.md
       - Coding best practice: implementing_RAP/coding-best-practice.md
       - How to publish your code in the open: implementing_RAP/how-to-publish-your-code-in-the-open.md
       - Notebooks vs IDE development: implementing_RAP/notebooks_versus_ide_development.md
-      - Quality assuring analytical outputs: implementing_RAP/quality-assuring-analytical-ouputs.md
+      - Quality assuring analytical outputs: implementing_RAP/quality-assuring-analytical-outputs.md
+      - Technical workflow: implementing_RAP/technical-workflow.md
       - Tidy data: implementing_RAP/tidy-data.md
-      - Training your team: implementing_RAP/training-your-team.md
+      - Tools: implementing_RAP/tools.md
   - Training resources:
       - Git:
           - Intro to Git: training_resources/git/intro-to-git.md
           - Using Git collaboratively: training_resources/git/using-git-collaboratively.md
       - Python:
-          - Back testing: training_resources/python/backtesting.md
           - Basic Python data analysis operations: training_resources/python/basic-python-data-analysis-operations.md
+          - Python functions: training_resources/python/python-functions.md
+          - Visualisation in Python: training_resources/python/visualisation-in-python.md
           - Handling file paths: training_resources/python/handling-file-paths.md
           - Logging and error handling in Python: training_resources/python/logging-and-error-handling.md
           - Project structure and packaging: training_resources/python/project-structure-and-packaging.md
-          - Python functions: training_resources/python/python-functions.md
-          - Unit testing: training_resources/python/unit-testing.md
-          - Unit testing field definitons: training_resources/python/unit-testing-field-definitions.md
           - Virtual environments: training_resources/python/virtual-environments.md
-          - Visualisation in Python: training_resources/python/visualisation-in-python.md
+          - Unit testing: training_resources/python/unit-testing.md
+          - Unit testing field definitions: training_resources/python/unit-testing-field-definitions.md
+          - Back testing: training_resources/python/backtesting.md
       - PySpark:
           - About PySpark: training_resources/pyspark/README.md
           - Logging and error handling in PySpark: training_resources/pyspark/logging-and-error-handling.md
@@ -54,9 +55,6 @@ nav:
           - External resources: training_resources/R/README.md
           - Git with RStudio: training_resources/R/git_with_RStudio.md
   - Useful links: useful_links.md
-  - Code of conduct: CODE_OF_CONDUCT.md
-  - Contribute: CONTRIBUTE.md
-  - Licence: LICENCE
 theme:
   name: material
   palette:
@@ -64,16 +62,36 @@ theme:
     primary: indigo
   font:
     text: Arial
-  logo: images/logo/nhs-logo.png
-  favicon: images/favicon/favicon.ico
+  logo: images/NHS-Digital-logo_LEFT-WHITE-235x183.png
+  favicon: images/NHS Digital logo_WEB_LEFT.svg
   features:
     - search.share
+    - content.code.annotate
+  icon:
+    admonition:
+      <type>: material/alert
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
   - tables
   - pymdownx.tasklist:
       clickable_checkbox: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 extra:
   social:
     - icon: fontawesome/brands/github

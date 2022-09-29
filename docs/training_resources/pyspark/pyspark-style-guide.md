@@ -8,7 +8,7 @@ PySpark gives you many ways to accomplish operations. We do not lay out all of t
 
 We avoid using pandas or koalas because it adds another layer of learning. The PySpark method chaining syntax is easy to learn, easy to read, and will be familiar for anyone who has used SQL.
 
-There does not yet seem to be a style convention for PySpark so we have adapted the style guide listed here: https://github.com/palantir/pyspark-style-guide
+There does not yet seem to be a style convention for PySpark so we have adapted [this style guide](https://github.com/palantir/pyspark-style-guide).
 
 You can also find a tutorial script containing lots of code snippets here.
 
@@ -20,13 +20,13 @@ PySpark makes a lot of use of functions imported from spark.sql.functions librar
 
 Our convention is to import these all under F:
 
-```
+```python
 from pyspark.sql import functions as F
 ```
 
 Then you would use the functions like:
 
-```
+```python
 F.col()
 
 F.max()
@@ -38,7 +38,7 @@ F.datediff()
 
 To get started we will usually want to read a table from a database into a DataFrame.
 
-```
+```python
 df = spark.table('my_database.my_table')
 ```
 
@@ -46,7 +46,7 @@ df = spark.table('my_database.my_table')
 
 The Spark equivalent of SQL's SELECT is the `.select()` method. This method takes multiple arguments - one for each column you want to select. These arguments can either be the column name as a string (one for each column) or a column object (using the df.colName syntax). If you are using Spark version before 3.0 then do this:
 
-```
+```python
 df = (
     df.select(F.col(‘AGE’), F.col(‘CHOLESTEROL’))
 )
@@ -62,7 +62,7 @@ In general, it is good practice to set the data types as soon as you read in dat
 
 In our approach, we use the initial `.select()` statement to (1) rename columns to follow our naming convention and (2) cast data types where necessary. This ensures everything is tidy before we start complex operations.
 
-```
+```python
 my_df = (
     my_df.select(
         F.col("NHS_NUMBER").cast("String").alias("NHS_NUMBER"),
@@ -77,7 +77,7 @@ my_df = (
 
 The `.filter()` method is the Spark counterpart of SQL's WHERE clause.:
 
-```
+```python
 my_df = (
     my_df.filter(F.col(‘MY_VALUE’) >= 4)
 )
@@ -87,7 +87,7 @@ my_df = (
 
 Changing a column name is simple:
 
-```
+```python
 df = (
     df.withColumnRenamed(‘old name’, ‘NEW_NAME’)
 )
@@ -95,7 +95,7 @@ df = (
 
 For example:
 
-```
+```python
 diabetes_data = (
     diabetes_data.withColumnRenamed(‘Birth_date’, ‘BIRTH_DATE’)
 )
@@ -105,7 +105,7 @@ diabetes_data = (
 
 The syntax for aggregation is very similar to SQL, but with a different order:
 
-```
+```python
 df = (
     df
     .groupby(F.col(‘YEAR’))
@@ -127,7 +127,7 @@ You have already seen lots of examples of method chaining in this guide but here
 
 Here is an example that contains many of the operations you might want to perform on a dataset:
 
-```
+```python
 df2 = (
     df1
     .select(F.col(‘FIELD_ONE’), F.col(‘FIELD_TWO’))
@@ -136,13 +136,11 @@ df2 = (
 )
 ```
 
-**Notice that we have put parentheses '()' around the entire query**
-
-**Notice also that we put the '.' at the beginning of each new line**
+Notice that we have put parentheses '()' around the entire query and we put the '.' at the beginning of each new line
 
 This approach contrasts to using the other common approach of having backslashes in the code. E.g. **(DON’T DO THIS)**
 
-```
+```python
 df2 = df1 \
     .select(‘FIELD_ONE’, ‘FIELD_TWO’) \
     .filter(‘FIELD_TWO > 10) \
@@ -158,7 +156,7 @@ You should **always explicitly specify the type of join** in PySpark. If you do 
 
 Here is an example of good practice where we specify a left join:
 
-```
+```python
 df_3 = (
     df_1
     .join(df_2, on=’NHS_NUMBER’, how=’left’)
@@ -168,7 +166,7 @@ df_3 = (
 
 Notice above how the joining field ‘on’ condition is also specified. In situations where you need to join on multiple fields do this:
 
-```
+```python
 df_3 = (
     df_1
         .join(df_2,
@@ -185,13 +183,13 @@ In the example above, the single joining field ‘on’ condition has been repla
 
 To simply add a new column to your dataset:
 
-```
+```python
 df = df.withColumn("MyNewColumnName", <insert your conditions here>)
 ```
 
 Suppose you want to add a new flag to your data (Yes = 1, No = 0), when a patient has had a chest x-ray or not:
 
-```
+```python
 df = (
     df
     .withColumn("X-RAY_FLAG", F.when(F.col("X-RAY_DATE").isnotNull(), 1)
@@ -205,13 +203,13 @@ This will result to an extra column in the dataset that contains the flag values
 
 If you want to create an empty column never use ‘NA’ or a blank string ‘ ‘ to fill in the rows of said column. Instead use None:
 
-```
+```python
 df = df.withColumn(‘MyEmptyColumnName’, F.lit(None))
 ```
 
 Or, here's an example where two new columns are created with the constant values of 1 and 2 in each column respectively.
 
-```
+```python
 df = (
     df
     .withColumn(‘MyColumnName1’, F.lit(1))
@@ -223,7 +221,7 @@ df = (
 
 We can create functions like in python, same logic applies, but instead using PySpark style:
 
-```
+```python
 def group_by_and_count_column(data: df, column_name: str):
     “”
     Groups by specified column and returns count per grouping and sorts by descending order.
@@ -245,13 +243,13 @@ def group_by_and_count_column(data: df, column_name: str):
 
 To reorder columns in a table, create a list of the columns in the order you wish them to be:
 
-```
+```python
 columns_order = ["NHS_NUMBER", "CCG", "APPOINTMENT", "APPOINTMENT_DATE", etc]
 ```
 
 And then apply to the dataframe:
 
-```
+```python
 new_df = (
     old_df.select(*columns_order)
 )
@@ -263,13 +261,13 @@ The asterisk is required to unpack the list in the select statement.
 
 Suppose you have flag columns in your dataset, whether a patient has attended an appointment or not, or a patient has completed a course of treatment. You can sum each of the flags on a record level by using a list and by adding an extra column using `.withColumn()` to the dataset with the sum result for each record:
 
-```
+```python
 flags_sum = ["APP_ATTENDED", "TREATMENT_COMPLETE"]
 ```
 
 After creating the list of flags we can now proceed to the final step:
 
-```
+```python
 new_df = (
     old_df
         .withColumn("PATIENT_SCORE", sum(old_df[item] for item in flags_sum))
@@ -282,7 +280,7 @@ Now you have a new column called PATIENT_SCORE that contains the sum of the spec
 
 To add derivations and fields definitions to the final processing table, simply follow the `.withColumn()` logic as before:
 
-```
+```python
 final_table = (
     previous_step_df
         .withColumn("SMOKING_NUMERATOR", smoking_numerator)
@@ -293,7 +291,7 @@ final_table = (
 
 The 2nd argument of `.withColumn()` is a variable created at a separate step in the workflow, for example:
 
-```
+```python
 smoking_numerator = (
     F.when((F.col("SMOKING_VALUE") >= 5) & (F.col("AGE") >= 18), 1).otherwise(0)
 )
@@ -307,7 +305,7 @@ Field definitions can be complex, with a lot of condition statements and potenti
 
 ### Using these field definitions to write test cases with customers
 
-Once you've written your field definitions, next step is to write the unit tests to ensure that the definitions work as intended and are futureproof to bugs and errors:
+Once you've written your field definitions, next step is to write the unit tests to ensure that the definitions work as intended and are future-proof to bugs and errors:
 
 - [Writing unit tests for field definitions][2]
 
@@ -315,7 +313,7 @@ Once you've written your field definitions, next step is to write the unit tests
 
 To pass a list of aggregations, as in the previous examples, create a variable that contains the specified aggregations:
 
-```
+```python
 aggregate_fields = (
     F.sum("REGISTRATIONS").alias("TOTAL_REGISTRATIONS"),
     F.count("NHS_NUMBER").alias("ALL_PATIENTS"),
@@ -325,11 +323,11 @@ aggregate_fields = (
 
 Then apply to the final table to produce the aggregated output:
 
-```
+```python
 aggregated_output = (
     final_table
     .agg(*aggregate_fields)
-    .<apply other conditions here, i.e. adding new colums or sorting the column order>
+    .<apply other conditions here, i.e. adding new columns or sorting the column order>
 )
 ```
 
@@ -339,7 +337,7 @@ Print the output `aggregated_output.show()`
 
 If you wish to create your own custom schema, here's how to do it:
 
-```
+```python
 schema = StructType([
       StructField("id",IntegerType(),True),
       StructField("colour",StringType(),True),

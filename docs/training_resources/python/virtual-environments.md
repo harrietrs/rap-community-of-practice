@@ -1,7 +1,5 @@
 # Virtual environments
 
-## What is a virtual environment and why should I care?
-
 Virtual environments are a way to make sure your code will run correctly for you and others. By always coding inside a virtual environment, you make it more likely that your work will be usable by others.
 
 If someone tries to run your code but they are using a different version of python then it might fail. Likewise, if your code depends on some packages but your users have a different version of that package installed that might also fail.
@@ -11,7 +9,6 @@ Worse than this - if you have multiple projects then one project depends on 'my_
 Virtual environments address these situations by keeping all of the packages and versions for each project separate. I can create a virtual environment called 'project-1-env' that uses python 2.7 and 'my_example_library_v1'. I can create a second virtual environment called 'project-2-env' that uses python 3.8 and 'my_example_library_v2'. As you move from working on one project to another, you just need to switch to the environment associated with that work.
 
 It is good practice to always code inside a virtual environment.
-<br/>
 
 ## Conda environment
 
@@ -27,7 +24,7 @@ See the [Anaconda user guides][conda-getting-started] for more information on ge
 
 To create a new conda virtual environment for your project, open the Anaconda Prompt (Windows) or a terminal window on Mac/Linus and enter:
 
-```
+```conda
 conda create --name myenvironment python=3.9
 ```
 
@@ -36,34 +33,33 @@ conda create --name myenvironment python=3.9
 
 To check the packages that are installed in the [active environment](#how-to-activate-an-environment), enter:
 
-```
+```conda
 conda list
 ```
 
 To install a package the active environment:
 
-```
+```conda
 conda install pandas
 ```
 
 To create an environment, specify the Python version and install multiple packages in **one line**:
 
-```
+```conda
 conda create --name mynewenvironment python=3.8 pandas 3.1.0 flake8 3.9.2 numpy
 ```
 
 Notice how the versions for pandas and flake8 are specified but no version is given for numpy. This will result in all versions of numpy being installed.
 
-- **TIP:** It is **recommended** to install all packages in one go (e.g. numpy, pandas, pytest etc). Installing 1 package at a time could cause potential package dependecy conflicts (see [Dependency Hell][dependency-hell]).
+- **TIP:** It is **recommended** to install all packages in one go (e.g. numpy, pandas, pytest etc). Installing 1 package at a time could cause potential package dependency conflicts (see [Dependency Hell][dependency-hell]).
 
 If you're unsure a specific package is installed in the current environment simply search:
 
-```
+```conda
 conda search flake8
 ```
 
 For more information on managing environments and other commands such as updating your environment's packages, check out [Managing environments with Conda][managing-conda-envs].
-<br/>
 
 ## How to activate an environment
 
@@ -73,7 +69,7 @@ When you start a new Anaconda Prompt (Windows) or open a new terminal (Mac/Linux
 
 To activate an environment, enter:
 
-```
+```conda
 conda activate mynewenvironment
 ```
 
@@ -94,13 +90,13 @@ If you followed the [Project structure and package organisation][1] guide, you w
 
 To create a working conda environment using the requirements.txt file, simply follow the conda environment creation commands from above and instead of the simple package installation, first activate the target environment:
 
-```
+```conda
 conda activate mynewenviroment
 ```
 
 And then enter:
 
-```
+```conda
 conda install --file requirements.txt
 ```
 
@@ -113,13 +109,13 @@ Conda offers a way to export and share environments via a yaml file.
 
 To export the active environment:
 
-```
+```conda
 conda env export > environment.yml
 ```
 
 The resulting file can be used to completely rebuild a conda environment:
 
-```
+```conda
 conda env create --file environment.yml
 ```
 
@@ -127,13 +123,13 @@ conda env create --file environment.yml
 
 Make sure your environment is not active by typing:
 
-```
+```conda
 conda deactivate
 ```
 
 This will take you back to the base conda environment. Then to delete your specified environment:
 
-```
+```conda
 conda env remove --name mynewenvironment
 ```
 
@@ -141,7 +137,7 @@ conda env remove --name mynewenvironment
 
 Type the following command for a list of helpful terminal commands:
 
-```
+```conda
 conda env --help
 ```
 

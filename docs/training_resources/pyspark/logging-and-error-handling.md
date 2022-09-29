@@ -1,3 +1,8 @@
+---
+#hide table of contents whitespace
+hide: toc
+---
+
 # Logging and error handling
 
 See our documentation on [logging and error handling][1] to find out more.

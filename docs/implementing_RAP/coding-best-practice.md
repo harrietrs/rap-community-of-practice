@@ -1,4 +1,9 @@
-# Coding Best Practice
+---
+#hide table of contents whitespace
+hide: toc
+---
+
+# Coding Best Practice :construction:
 
 This page is still under construction, however you can find guidance on this at these pages:
 

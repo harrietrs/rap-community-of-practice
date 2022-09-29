@@ -1,7 +1,5 @@
 # Basic Python Data Analysis operations
 
-## What is this guide about?
-
 Python offers many ways to achieve multiple calculations, computations and operations. For data analysis and data science overall, [Pandas](https://pandas.pydata.org/) is the most commonly used package or library to perform these operations, along with [NumPy](https://numpy.org/).
 
 ## Reading in data
