@@ -1,7 +1,5 @@
 # Project and Package structuring
 
-## What is a package and why should I care?
-
 A python package is a way to bundle your code into a single thing that can be shared and reused. If our goal is to be able to share and reuse code across NHS Digital and externally then there are many benefits to packaging code:
 
 - **Shareable**: The most important reason to use packages is that it is **the way** to share python code. Not using packages runs the risk that other people will not be able to run your code... "It works fine on my machine".
@@ -14,11 +12,11 @@ This is a tricky topic at first so we recommend asking for some support when you
 
 ## How to package python code
 
-In order to package your code, you just need to follow the standard templates for python projects. I describe this briefly here but provide links to the comprehensive offical guidance below.
+In order to package your code, you just need to follow the standard templates for python projects. I describe this briefly here but provide links to the comprehensive official guidance below.
 
 Here is an outline of a very basic python project for the Smoking, Drinking, and Drugs publication (SDD):
 
-```
+```txt
 SDD/
 ├── LICENSE
 ├── README.md
@@ -121,7 +119,7 @@ Some things to notice about this structure:
 
 - The next level down contains the meaty parts of the code. By organising the code into logical sections, we make it easier to understand but also to maintain and test. Moreover, tucking the complex code out of the way means that users don't need to understand everything about the code all at once.
   - The `data_connections.py` file handles reading data in and writing data back out. Since we know that this code will have to migrate to Data Refinery soon, it makes sense to have an interface here. The plan is that when we move to Data Refinery, this should be the only code we need to change.
-  - The `field_definitions.py` file contains the definitions for each of the fields (columns) derived in the process. By abstracting these definitions out of the code and making them reuseable, we achieve some great benefits. First, it becomes much easier to maintain. When the specifications change next year, we only need to make the change in one location. Next, it becomes much easier to test. We write unit tests for each of these definitions and can then reuse these definitions in many places without increasing risk.
+  - The `field_definitions.py` file contains the definitions for each of the fields (columns) derived in the process. By abstracting these definitions out of the code and making them reusable, we achieve some great benefits. First, it becomes much easier to maintain. When the specifications change next year, we only need to make the change in one location. Next, it becomes much easier to test. We write unit tests for each of these definitions and can then reuse these definitions in many places without increasing risk.
   - The `processing_steps.py` file contains the core business logic of the diabetes data. We could consider breaking this down into further steps.
 
 Note that we never store passwords or any sensitive credentials in the repo to prevent the situation where it can mistakenly committed into the git. There are several ways to deal with the secret, keys and passwords such as using Git Hooks or final cleansing process before publishing. 
@@ -132,7 +130,7 @@ This is a really big topic and we don't want to replicate material that you can 
 
 - [Packaging your Python project](https://packaging.python.org/tutorials/packaging-projects/)
 
-- [Packages and modules from the offical docs](https://docs.python.org/3/tutorial/modules.html#packages).
+- [Packages and modules from the official docs](https://docs.python.org/3/tutorial/modules.html#packages).
   _Good for understanding on how to organise and import sub-packages._
 
 - [Why we share code as a .whl file](https://packaging.python.org/discussions/wheel-vs-egg/)

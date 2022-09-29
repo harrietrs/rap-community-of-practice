@@ -1,8 +1,10 @@
 # Typical Engagement Flow
 
-Many people ask about what a typical engagement with the RAP team at NHS Digital looks like. Since every team is different and since the service is still in a formative state, there is no really typical engagement.
+This example describes a typical lifecycle of applying RAP principles to an existing product.
 
-Nevertheless, the text below lays out the type of activities that occur in across the engagement. The approach described is the [support model][1] where the RAP team leads the development as this is our most frequent approach.
+It's important to remember that every team is different and so there is no _really typical_ engagement, but hopefully the below gives you an idea of what's involved.
+
+The approach described is the [support model][1] where the RAP team leads the development as this is our most frequent approach.
 
 > Please note that a direct engagement with the RAP team at NHS Digital is currently only available to NHS Digital teams. The below is intended to help other organisations that may be developing their own RAP capabilities and are looking for guidance.
 

@@ -47,4 +47,4 @@ You can also view our own checklist in the [Quality Assuring Analytical Outputs]
 
 - [Atlassian Code Reviews](https://www.atlassian.com/agile/software-development/code-reviews)
 
-[1]: ./quality-assuring-analytical-ouputs.md
+[1]: ./quality-assuring-analytical-outputs.md

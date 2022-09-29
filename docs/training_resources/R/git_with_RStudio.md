@@ -124,7 +124,7 @@ ii. Once in the dropdown menu, type in the branch's new name and hit Enter. You 
 
 iii. In the above image notice how it points the original branch we are copying from, in grey letters: from "main". If you wish to create a new branch, which will be a copy from a different branch to "main", then set the repository to the branch you wish to copy from and then repeat steps i. and ii.
 
-iv. Back to the terminal (e.g. Command Prompt/Anaconda Prompt/Git Bash etc.), type `git branch -a` to view a list of all available branches existing in the repository. The branches that contain the `remote/` path are the branches online, on GitHub. Have a look at the list. You will notice your new branch is not there yet. To update your local master branch with all the lastest updates on Gitlab, type `git pull`. Type `git branch -a` and you should see your branch available in the list now.
+iv. Back to the terminal (e.g. Command Prompt/Anaconda Prompt/Git Bash etc.), type `git branch -a` to view a list of all available branches existing in the repository. The branches that contain the `remote/` path are the branches online, on GitHub. Have a look at the list. You will notice your new branch is not there yet. To update your local master branch with all the latest updates on Gitlab, type `git pull`. Type `git branch -a` and you should see your branch available in the list now.
 
 v. To start working on your branch and select, type in the terminal `git checkout <your branch name>`.
 
@@ -169,11 +169,11 @@ iii. In the Create New Project dialogue, select existing directory (since we hav
 
 ![](../../images/create_new_project.PNG)
 
-iv. You should be able to see the project structure on the lower right hand side windown as it is displayed on GitHub.
+iv. You should be able to see the project structure on the lower right hand side window as it is displayed on GitHub.
 
 ![](../../images/project_structure.PNG)
 
-v. On the top toolbar select File -> New File -> Rscript and save the file somewhere in your repository (don't forget to name your Rscipt!).
+v. On the top toolbar select File -> New File -> Rscript and save the file somewhere in your repository (don't forget to name your Rscript!).
 
 vi. Add something into that file, a simple print statement or a comment.
 
@@ -189,13 +189,13 @@ i. Type `git status` to see the modifications that haven't been staged yet (in r
 
 ii. Type `git add <filename>` to stage your changes. Or `git add .` to simply stage all changes automatically (use with caution).
 
-iii. Type `git status` to see the file modifications now have a green colour. This means that Git add was succesfull.
+iii. Type `git status` to see the file modifications now have a green colour. This means that Git add was successful.
 
 iv. Type `git commit -m "your commit message here"` to commit these changes.
 
 v. Type `git status` to view the status of your repo. There should be no modifications visible (or colours!).
 
-vi. Type `git push`. This command will upload all your commited changes to GitHub.
+vi. Type `git push`. This command will upload all your committed changes to GitHub.
 
 #### 6. Check the repository on GitHub to view the changes updated
 
@@ -235,7 +235,7 @@ To submit a pull request:
 
 5. Click Create Pull Request.
 
-6. Fill out any information related to the Pull request, title, description, any comments. On the rigth hand side you can assign yourself as the Assignee, and assign someone in your team to be the Reviewer. Then, select Create Pull Request.
+6. Fill out any information related to the Pull request, title, description, any comments. On the right hand side you can assign yourself as the Assignee, and assign someone in your team to be the Reviewer. Then, select Create Pull Request.
 
 ## How to accept a pull request
 
@@ -263,7 +263,7 @@ On the Pull request page, there are four tabs: Conversation, Commits, Checks and
 
 #### Checks
 
-**Checks** is part of the GitHub Actions functionality, which enchances your code review processes with apps and automated reviewing checks. This is inactive on default.
+**Checks** is part of the GitHub Actions functionality, which enhances your code review processes with apps and automated reviewing checks. This is inactive on default.
 
 If you are happy to merge the two branches, then select the type of Pull Request you wish to apply and the pull request should be completed in a few seconds.
 

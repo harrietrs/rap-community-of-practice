@@ -1,11 +1,8 @@
 # Logging and error handling
 
-## Why should I care?
-
 Logging and error handling are two concepts that will improve the reliability and maintainability of your code. These big topics could each be given their own chapter but here we try to show how the combination of simple logging and simple error handling can be easy to implement while offering substantial benefits.
-<br/>
 
-#### Logging
+## What is logging?
 
 Logging is a way to track events that occur when your code runs. The logs will show when different parts of your code was run and what the result was. For example, my `ingest_data.py` module ran at 08:44 on 2021-09-17 and found 3,452,521 rows of data.
 
@@ -13,7 +10,7 @@ You can think of logging as the next evolution of the `print` statement. When wr
 
 Python’s standard library "[logging](https://docs.python.org/3/library/logging.html)" includes a flexible built-in logging module, allowing the developer to create different configurations to fulfil their logging needs. For example, the log can be categorised based on levels of severity and the users might select the destination (in console, files, remote server, or email).
 
-#### Error handling
+## What is error handling?
 
 Error handling provides a way for us to try to handle problems in our code in a constructive manner. Error handling works hand-in-hand with logging to improve code reliability.
 
@@ -24,7 +21,7 @@ As a developer, I can often anticipate what parts of my code are likely to have 
 
 In this way we improve visibility of the functioning of our code. If the code runs every night at midnight but has failed last night, then our error handling and logging should tell me exactly what has gone wrong.
 
-## Logging in more depth
+## Logging in Python
 
 Python comes with a standard "[logging](https://docs.python.org/3/library/logging.html)" library that gives us the capabilities to:
 
@@ -82,7 +79,7 @@ Watch [here](https://hscic365.sharepoint.com/:v:/s/RAPcommunityofpractice/EVBYaW
 
 _Disclaimer: the above video will not load for external users._
 
-## Error handling
+## Error handling in Python
 
 Error handling using try/except is useful and powerful. When python hits an error, it produces something called an exception. An exception is an object that tries can tell you something about what has gone wrong. There are many different types of exceptions - see the full list [here](https://www.tutorialsteacher.com/python/error-types-in-python).
 
@@ -129,7 +126,7 @@ except (ValueError, ZeroDivisionError, KeyError) as e:
     exit()
 ```
 
-### Error handling dos and don'ts:
+### Error handling dos and don'ts
 
 #### Don't raise a generic exception
 
@@ -261,14 +258,9 @@ See our guide on [logging and error handling in PySpark][1]
 
 ## Further reading
 
-#### Logging
-
 - [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html "https://docs.python.org/3/howto/logging-cookbook.html")[](https://docs.python.org/3/howto/logging-cookbook.html#formatting-styles "https://docs.python.org/3/howto/logging-cookbook.html#formatting-styles")
 - [Logging HowTo](https://docs.python.org/3/howto/logging.html "https://docs.python.org/3/howto/logging.html")
 - [Logging in Python](https://realpython.com/python-logging)
-
-#### Error handling
-
 - [General guide on errors and error handling](https://docs.python.org/3/tutorial/errors.html)
 - [Page which provides a large list of errors that can be encountered](https://docs.python.org/3/library/exceptions.html)
 

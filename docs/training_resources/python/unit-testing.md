@@ -1,7 +1,5 @@
 # Unit testing
 
-## What are unit tests and why should I care?
-
 Tests are functions which make logical assertions. If all assertions are correct then the test passes, if at least one assertion is incorrect then the test fails. Tests are a useful metric for deciding if an application has met its requirements.
 
 Unit tests test a single piece of functionality, this functionality is delivered by a single unit of code such as a method. The philosophy behind unit tests is that if the functionality of the smallest units of the program can be guaranteed, then it is significantly more likely that the project as a whole is succeeding in delivering its functionality.
@@ -35,7 +33,7 @@ Test driven development (TDD) is a developmental approach in which tests are wri
 2. We have to break down our project and write functions to deliver these units of functionality, rather than writing tests for our functions.
 3. It prevents us from having tunnel-vision when it comes to code. As our attention will always be brought back to our tests which are based on the higher-level context of the functionality the project should deliver.
 4. It forces us to make sure that we understand the goals of the project before we start writing code.
-   While a perfect TDD approach can be hard to achieve, maintaining its general goals will keep a project more focused. Field definitions provide an excellent example of where TDD could be useful. To apply TDD we would need to properly plan out our field definitions before hand (perhaps by looking at preexisting SQL code if we are transitioning to PySpark). We can then write tests for each of these field definitions with the expected values we have planned to show that they are a fundamental part of the project. Initially all these tests will fail but over the course of development more will pass until we know that all of our field definitions have been implemented according to our initial plan.
+   While a perfect TDD approach can be hard to achieve, maintaining its general goals will keep a project more focused. Field definitions provide an excellent example of where TDD could be useful. To apply TDD we would need to properly plan out our field definitions before hand (perhaps by looking at pre-existing SQL code if we are transitioning to PySpark). We can then write tests for each of these field definitions with the expected values we have planned to show that they are a fundamental part of the project. Initially all these tests will fail but over the course of development more will pass until we know that all of our field definitions have been implemented according to our initial plan.
 
 ### Migration
 
@@ -87,7 +85,7 @@ Based on these features we will need a unit test for each case the functionality
 2. Erroneous cases. Cases where the input is 'bad' and our code handles this in some way (such as by throwing an exception) and exits gracefully.
 3. Edge cases. Cases where the input is likely to require special handling by our function (extreme cases).
 
-Lets take the example of sorting a list. We have identified that our project needs to support the small unit of functionailty to sort a list of integers into ascending order. We can identify some cases to test quickly:
+Lets take the example of sorting a list. We have identified that our project needs to support the small unit of functionality to sort a list of integers into ascending order. We can identify some cases to test quickly:
 
 | Type of case | Behaviour                                                                                    |
 | ------------ | -------------------------------------------------------------------------------------------- |
@@ -97,7 +95,7 @@ Lets take the example of sorting a list. We have identified that our project nee
 | Erroneous    | A list that contains a null/none value should throw an exception                             |
 | Erroneous    | A list that contains data of the wrong type (string, float etc) should throw an exception    |
 | Edge         | An empty list should not throw an exception, and an empty list should be returned            |
-| Edge         | A list with repeated values should be sorted like normal with repeated values interchangable |
+| Edge         | A list with repeated values should be sorted like normal with repeated values interchangeable |
 
 We have now identified 7 unit tests for this piece of functionality. The process of figuring out cases has also elucidated two more things:
 
@@ -135,7 +133,7 @@ This guide will not focus on all the basic setup and features of pytest as this 
 Your test functions will obviously be stored in a file but having all of your tests in one file can become messy. At some point we need to plan how to organise and lay out our tests in order to make best use of them. In a RAP project you will typically have three kinds of tests:
 
 - Unit tests which have been covered in this guide.
-- Integreation tests which test the interaction between modules of the program (occurs after unit testing).
+- Integration tests which test the interaction between modules of the program (occurs after unit testing).
 - Backtesting used to check how successful the pipeline is on historical data.
 
 These three classes of tests need to be separated out. The simplest way to do this is to have a subfolder in your main tests folder for each fo these kinds of tests, and then within these subfolders have python files containing the tests:
@@ -144,11 +142,11 @@ These three classes of tests need to be separated out. The simplest way to do th
   - "unittests":
     - unit test code
   - "integration"
-    - integreation test code
+    - integration test code
   - "backtesting"
     - backtesting code
 
-We may also want to seperate out our tests further into domains. For example we could have all of our unit tests in one file in the unit tests subfolder. Alternatively we may have several files for unit tests for different parts of the project. For example in the diabetes RAP we have:
+We may also want to separate out our tests further into domains. For example we could have all of our unit tests in one file in the unit tests subfolder. Alternatively we may have several files for unit tests for different parts of the project. For example in the diabetes RAP we have:
 
 - `test_data_connections.py`
 - `test_field_definitions.py`
@@ -172,7 +170,7 @@ class TestCholesterolNumerator(object):
 
 (Test function bodies omitted for brevity).
 
-The functionality we are testing for is a `cholesterol_numerator` field defintion so we create a class for this functionality called `TestCholesterolNumerator`. We have identified we need two tests to guarantee this functionality so we write these tests as we normally would but put them within the `TestCholesterolNumerator` class. This makes it clear what functionality each test relates to.
+The functionality we are testing for is a `cholesterol_numerator` field definition so we create a class for this functionality called `TestCholesterolNumerator`. We have identified we need two tests to guarantee this functionality so we write these tests as we normally would but put them within the `TestCholesterolNumerator` class. This makes it clear what functionality each test relates to.
 
 ## External links
 

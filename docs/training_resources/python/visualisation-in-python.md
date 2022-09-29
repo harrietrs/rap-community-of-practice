@@ -1,10 +1,8 @@
 # Visualisations in Python
 
-## Intro to python visualisations
+Creating visualisations can require a lot of effort.
 
-Creating visualisations in this day and age can be confusing, most of us wish to convey information and data using several fancy data visualisation tools but in reality, to reach the end result of that flashy animated time series chart, a lot of effort is required if you're starting with a blank code script.
-
-People and data visualisation experts are happy to share their code and knowledge behind the graphs or interactive maps they produced. Consequently, we don't have to open the pie chart python documentation and magically understand how to edit some of the chart's features, we can just re-use existing visualisations, learn and understand the process and code behind the end result and use the parts that are applicable for our plots. In the spirit of this, feel free to practice with and use the plots demonstrated in this guide. See Matplotlib Examples Gallery:
+See Matplotlib Examples Gallery:
 
 - [Matplotlib Examples gallery](https://matplotlib.org/stable/gallery/index.html)
 

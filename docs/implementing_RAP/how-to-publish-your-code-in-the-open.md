@@ -12,7 +12,7 @@ The Government's [Digital Service Standard](https://www.gov.uk/service-manual/se
 - Knowing that your code will be published will lead to your overall code health increasing as analysts and developers will take greater care in ensuring best coding practices and standards are applied.
 - Reduce burden by sharing and reusing code. Internal and external users can learn from your code repositories and templates, and apply it to their work or personal projects.
 
-The Goverment Digital Service released an **[informative video](https://www.youtube.com/watch?v=aqFFCvjXr1s)** on the benefits of coding in the open, from the start of a project.
+The Government Digital Service released an **[informative video](https://www.youtube.com/watch?v=aqFFCvjXr1s)** on the benefits of coding in the open, from the start of a project.
 
 ## Analytical leadership commitment to RAP code publishing
 
@@ -58,7 +58,7 @@ This checklist covers the review process in place to ensure that the code is:
 
 To access the checklist click on the link below and select the Download option:
 
-- PDF version for viewing: [Fit for publishing checkilst PDF](../images/Fit_for_publishing_checklist.pdf)
+- PDF version for viewing: [Fit for publishing checklist PDF](../images/Fit_for_publishing_checklist.pdf)
 - Download the Work doc version to edit: [Fit for publishing checklist Word](../images/Fit_for_publishing_checklist.docx)
 
 For each subsection of the checklist:

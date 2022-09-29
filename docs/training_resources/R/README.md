@@ -1,3 +1,8 @@
+---
+#hide table of contents whitespace
+hide: toc
+---
+
 # R
 
 We do not have many materials for R since the majority of our users use Python.

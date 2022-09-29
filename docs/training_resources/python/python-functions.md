@@ -2,8 +2,6 @@
 
 > We are currently updating our minimal Python RAP package template, which is freely available to use via Github: [RAP package template](https://github.com/NHSDigital/rap-package-template).
 
-## What are Python functions and why do I care?
-
 A function is a block of organised code that is reusable, and is used to perform a single defined action. Functions can take in multiple values (arguments) and can also return a value after executing. The code of the function only runs when it is called.
 
 ## Features of a function
@@ -34,7 +32,7 @@ If you don't specify anything to be returned, your function will return None.
 
 In this example we can see all the features of a function:
 
-- The name of the function is `fahrenheit_to_celcius()` (you should use snake_case here)
+- The name of the function is `fahrenheit_to_celsius()` (you should use snake_case here)
 - The function has one argument`temp`. Function arguments in python are listed between the parentheses after the function name. Additional function arguments are separated by commas.
 - The code body calculates the value of the input Fahrenheit temperature in Celsius.
 - The function returns the result of this calculation. This is done using the return keyword in python. When the program hits the return keyword it immediately returns the value specified after the keyword and exits the function. If the function doesn't return anything (which it does not need to) then the function is exited when all the code in the function body has been executed.
@@ -54,7 +52,7 @@ There are several benefits to using functions, we will discuss the following her
 
 Functions allow us to cut down on code repetition, which makes code harder to read and understand. In general, if you need to write the same code pattern more than twice then you should put some time into writing a function for later usage. When you need to change part of this code chunks, it will be more convenience to do it once inside a function instead of changing many places in your code base.
 
-For example, we take the following function (from geeksforgeeks) to implement bubble sort. A sorting algorithm aims to take in an array of numbers and sort them in increasing order. The bubble sort compares each pair of adjacent elements in the input array and swaps them if they are not in the right order.
+For example, we take the following function to implement bubble sort. A sorting algorithm aims to take in an array of numbers and sort them in increasing order. The bubble sort compares each pair of adjacent elements in the input array and swaps them if they are not in the right order.
 
 ```python
     def bubblesort(arr):
@@ -222,8 +220,6 @@ Another benefit of using functions is that they aid in testing the project. Func
 ### Documentation
 
 By breaking down processing steps into functions we can individually document each of these functions, whereas if we instead had a long sequence of code the best documentation that is possible are simple code comments throughout. The next section goes into detail on documenting functions and the benefits of doing so.
-
-## Documentation
 
 Python docstrings make it possible to document your defined python functions, and describe their functionality. Here is an example of a well-documented python function:
 

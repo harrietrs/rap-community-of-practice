@@ -1,8 +1,6 @@
-# Unit testing field definitons
+# Unit testing field definitions
 
-## Overview of this guide
-
-This page focuses on one specific application of unit testing that is very relevant to analysts; testing the definitions of different fields (columns). One of the biggest burdens on stats teams is to maintain accurate definitions of fields over time as the specifications change. This drift in definitions is also one of the biggest sources of errors in stats publications. In the worst cases you may find that a field is defined in dozens of locations across a code-base. Each of these needs to be updated each time a change happens - leading to burden and risk.
+This section focuses on one specific application of unit testing that is very relevant to analysts; testing the definitions of different fields (columns). One of the biggest burdens on stats teams is to maintain accurate definitions of fields over time as the specifications change. This drift in definitions is also one of the biggest sources of errors in stats publications. In the worst cases you may find that a field is defined in dozens of locations across a code-base. Each of these needs to be updated each time a change happens - leading to burden and risk.
 
 Here we show that by separating the definitions of fields from the context in which you create those fields, you can easily maintain and manage those definitions over time. Moreover, these atomic field definitions become very easy to include in unit tests. In this way you can use simple data examples to ensure your outputs are accurate.
 
@@ -39,7 +37,7 @@ In the code above three field definitions are given:
 
 - A `foot_denom` field which has a value of 1 if the 'AGE' column has a value of 12 or more, otherwise has a value of 0.
 - A `cvd_admission` field which has a value of 1 if there is a value in the 'NHS_NUMBER' field otherwise has a null value (None).
-- A `no_cvd_on_statins_50_to_80` field which has a value of 1 if: - The 'CVD_ADMISSION' and 'IHD_VALUE' columns both have a null value. - And the 'STATIN_FLAG' column has a value of 1. - And the 'AGE' column has a avlue between 40 and 80 inclusive. - Otherwise `no_cvd_on_statins_50_to_80` has a value of 0
+- A `no_cvd_on_statins_50_to_80` field which has a value of 1 if: - The 'CVD_ADMISSION' and 'IHD_VALUE' columns both have a null value. - And the 'STATIN_FLAG' column has a value of 1. - And the 'AGE' column has a value between 40 and 80 inclusive. - Otherwise `no_cvd_on_statins_50_to_80` has a value of 0
 
 With our fields defined we can now re-use them without having to write out their logic every time we do so. For example:
 
@@ -58,13 +56,13 @@ There is still the second issue to deal with; namely how do we know our field de
 
 Why should we bother to write these unit tests? Especially for something as simple as our field definitions.
 
-Unit tests test for functionality not code. This means that we base the expected output of a unit test on our design. This is well suited to field definitons as it means our metric for whether or not our field definitions are correct is based on our initial design decisions. We can then setup these tests with static data. All of our field definitions tests passing means all of our field definitions are correct. This also future-proofs our code. If someone makes a change to a field definition by mistake the test for it will fail and we will catch bugs early.
+Unit tests test for functionality not code. This means that we base the expected output of a unit test on our design. This is well suited to field definitions as it means our metric for whether or not our field definitions are correct is based on our initial design decisions. We can then setup these tests with static data. All of our field definitions tests passing means all of our field definitions are correct. This also future-proofs our code. If someone makes a change to a field definition by mistake the test for it will fail and we will catch bugs early.
 
 Now when we need to change the specifications for a field definition we go through the following steps:
 
 1. Plan out the adjusted field definition and all the expected values it should output on various inputs.
 2. Now we have the design of the adjusted field definition update our tests to reflect it.
-3. Rewrite the code defining the field defintion so that it passes our test.
+3. Rewrite the code defining the field definition so that it passes our test.
 
 We have now solved both of our initial worries with field definitions:
 
@@ -98,7 +96,7 @@ There are three kinds of cases to deal with:
 
 Edge cases are the cases that are the most important to define, as they require specific design decisions to be made. Through their dialogue S and D were able to identify a complete range of cases for this new field definition, we can specify example input values as well which we will use in our tests:
 
-| Case type     | Case        | Example input | Epected output |
+| Case type     | Case        | Example input | Expected output |
 | ------------- | ----------- | ------------- | -------------- |
 | Edge          | AGE < 0     | -1            | 0              |
 | Edge          | AGE = 0     | 0             | 0              |
