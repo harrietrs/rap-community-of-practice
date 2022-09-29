@@ -1,0 +1,37 @@
+:root > * {
+  --md-primary-fg-color: #005eb8;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f8f8f8;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 100%;
+  color: black;
+  --md-footer-bg-color: #f8f8f8;
+  --md-footer-fg-color: black;
+  --md-footer-fg-color--light: black;
+}
+
+.md-typeset h1 {
+  color: black;
+  font-size: 2em;
+  line-height: 1.3;
+  margin: 0 0 1.25em;
+}
+
+.md-typeset {
+  font-size: 16px;
+}
+
+.md-copyright {
+  color: black;
+}
+
+.md-logo {
+  height: 80px;
+}
+
+.md-header__button.md-logo :-webkit-any(img, svg) {
+  width: 85px;
+  height: auto;
+}
