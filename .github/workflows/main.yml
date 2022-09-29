@@ -17,10 +17,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Checkout main
+        uses: actions/checkout@v2
 
-      - name: Deploy MkDocs
-        # You may pin to the exact commit or the version.
-        # uses: mhausenblas/mkdocs-deploy-gh-pages@b1bb7cbaa91997e57d601309aac18facb028ff7d
-        uses: mhausenblas/mkdocs-deploy-gh-pages@1.25
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: docs/mkdocs.yml
